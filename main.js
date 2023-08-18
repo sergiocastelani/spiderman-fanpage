@@ -13,6 +13,7 @@ init();
 function init() 
 {
   scene = new THREE.Scene();
+  scene.background = new THREE.Color("#feff00");
 
   // load environment map
   new RGBELoader()
