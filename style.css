@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Comic Sans MS';
-  src: url("/comic.ttf");
+  src: url("./comic.ttf");
 }
 
 body {
