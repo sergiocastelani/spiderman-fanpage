@@ -79,6 +79,16 @@ footer p {
   cursor: pointer;
 }
 
+.blink {
+  animation: blinker 1.5s linear infinite;
+  color: rgb(0, 0, 0);
+}
+@keyframes blinker {
+  50% {
+      opacity: 0;
+  }
+}
+
 
 /* responsiveness */
 @media (max-width: 1100px) {

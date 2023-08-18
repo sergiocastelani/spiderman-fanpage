@@ -30,9 +30,8 @@ function init()
       const loader = new GLTFLoader().setPath( 'spiderman/' );
       loader.load( 'scene.gltf', function ( gltf ) {
         scene.add( gltf.scene );
-        let angleX = 0 * Math.PI / 180;
-        scene.rotation.set( angleX, 0, 0 );
         repaint = true;
+        loadPage('page1.html');
       } );
 
     } );
@@ -194,7 +193,6 @@ window.loadPage = async (pageUrl) =>
       }, 100);
     });
 }
-loadPage('page1.html');
 
 window.controlling = (enabled) => controls.enabled = enabled;
 controlling(false);
