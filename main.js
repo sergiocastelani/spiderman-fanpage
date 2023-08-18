@@ -23,7 +23,11 @@ function init()
       texture.mapping = THREE.EquirectangularReflectionMapping;
       scene.environment = texture;
       const bgLoader = new THREE.TextureLoader();
-      scene.background = bgLoader.load( './textures/bg.png' );
+      bgLoader.load( './textures/bg.png', 	( texture ) => {
+        // in this example we create the material when the texture is loaded
+        scene.background = texture;
+      },
+     );
 
       repaint = true;
 
