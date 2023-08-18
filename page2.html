@@ -1,0 +1,46 @@
+<style>
+  #this-page-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-content: space-between;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 20%
+  }
+
+  #this-page-content img {
+    display: block;
+    width: 30%;
+    border: 5px solid black;
+    border-radius: 5px;
+  }
+
+  .spacer {
+    width: 20%;
+    flex-grow: 1;
+  }
+
+  </style>
+  <img 
+    src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+    onload="
+      cameraFly({
+        position: {x: 0.9185237823416453, y: 6.122996977531351, z: 14.358101525275082},
+        target: {x: -0.05420884919824564, y: 3.083221318816934, z: 2.163869997396599},
+        focusDistance: 0.19,
+        focalLength: 0.21,
+        time: 2000,
+        easing: TWEEN.Easing.Quartic.Out
+      });
+    "
+  />
+  <div id="this-page-content" class="hide">
+    <img src="./textures/cover1.jpg">
+    <div class="spacer"></div>
+    <img src="./textures/cover2.jpg">
+
+    <img src="./textures/cover3.webp">
+    <div class="spacer"></div>
+    <img src="./textures/cover4.jpg">
+  </div>

@@ -1,0 +1,54 @@
+<style>
+h3 {
+  margin: 0;
+}
+
+#this-page-content {
+  border: 5px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  background-image: url(/textures/comic-bg.jpg);
+  background-size: contain;
+  margin: 0 58% 0 5%;
+  text-align: justify;  
+}
+#this-page-content footer{
+  text-align: right;
+  font-size: 0.4em;
+}  
+
+@media (max-width: 600px) {
+  #this-page-content {
+    margin: 0 30% 0 5%;
+  }  
+}
+
+@media (max-width: 400px) {
+  #this-page-content {
+    margin: 0 5% 0 5%;
+  }  
+}
+</style>
+<img 
+  src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+  onload="
+    cameraFly({
+      position: {x: 3.207386291632545, y: -8.519450982200944, z: 8.136948453078649},
+      target: {x: -0.9170264931873455, y: 2.3571077232005972, z: 5.293700508951016},
+      focusDistance: 0.25,
+      focalLength: 0.1,
+      time: 2000,
+      easing: TWEEN.Easing.Quartic.Out
+    });
+  "
+/>
+<div id="this-page-content" class="hide">
+  <h3>This is a fanpage demo</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis rem praesentium minima error impedit cum iure facere corrupti voluptatum dolores tempore cupiditate, dolorem architecto, ea quasi. Inventore accusantium id voluptates.
+  </p>
+  <footer>
+    ©comic background image by alicia_mb on Freepik
+  </footer>
+</div>
