@@ -21,10 +21,8 @@ function init()
 
       texture.mapping = THREE.EquirectangularReflectionMapping;
       scene.environment = texture;
-//      scene.background = texture;
-//      scene.background = new THREE.Color("#880000");
       const bgLoader = new THREE.TextureLoader();
-      scene.background = bgLoader.load( '/textures/bg.png' );
+      scene.background = bgLoader.load( './textures/bg.png' );
 
       repaint = true;
 
