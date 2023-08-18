@@ -92,9 +92,9 @@ function onWindowResize()
 
 //
 function setupGUI(){
-  const gui = new dat.GUI();
-  gui.add(composer.depthOfFieldEffect.circleOfConfusionMaterial.uniforms.focusDistance, 'value', 0.01, 0.6).name('Focus').step(0.01).onChange(value => repaint=true);
-  gui.add(composer.depthOfFieldEffect.circleOfConfusionMaterial.uniforms.focalLength, 'value', 0.1, 0.3).name('Focal').step(0.01).onChange(value => repaint=true);
+  // const gui = new dat.GUI();
+  // gui.add(composer.depthOfFieldEffect.circleOfConfusionMaterial.uniforms.focusDistance, 'value', 0.01, 0.6).name('Focus').step(0.01).onChange(value => repaint=true);
+  // gui.add(composer.depthOfFieldEffect.circleOfConfusionMaterial.uniforms.focalLength, 'value', 0.1, 0.3).name('Focal').step(0.01).onChange(value => repaint=true);
 }
 
 function prepareDoF()
