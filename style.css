@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 main {
@@ -64,10 +67,27 @@ footer p {
 
 #page-buttons {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+#rotate-button {
+  padding: 0px 10px;
+  border: solid 2px black;
+  border-radius: 5px;
+  cursor:  pointer;
+  transition: 0.3s;
+  background-color: white;
+}
+#rotate-button:hover,
+#rotate-button:focus
+{
+  background-color: rgb(207 235 251);
 }
 
 .page-button {
-  margin: 10px;
   padding: 10px 20px;
   background-color: #790500d4;
   border: 2px solid #080808;

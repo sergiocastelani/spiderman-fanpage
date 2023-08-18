@@ -57,11 +57,12 @@ function init()
 
   camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 0.01, 50 );
   camera.position.set( -24.05950171921488, 17.219333964816713, 61.96715866033636 );
-  controls = new OrbitControls( camera, document.querySelector('main') );
+  controls = new OrbitControls( camera, document.querySelector('#page-container') );
   controls.minDistance = 2;
   controls.maxDistance = 500;
   controls.target.set( 6.98, 38.82, 9.01 );
   controls.update();
+  controls.enabled = false;
   controls.addEventListener('change', () => {
 //    console.debug(camera.position, controls.target);
     repaint = true;
@@ -194,6 +195,8 @@ window.loadPage = async (pageUrl) =>
     });
 }
 
-window.controlling = (enabled) => controls.enabled = enabled;
-controlling(false);
+window.toggle3DControls = () => {
+  controls.enabled = !controls.enabled;
+  document.getElementById('rotate-button').style.backgroundColor = controls.enabled ? '#7ed767' : 'white';
+};
 
