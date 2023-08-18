@@ -20,7 +20,7 @@ main > footer {
   background-color: #740000f5;
   color: white;
   font-size: 0.35em;
-  padding: 10px;
+  padding: 5px;
   font-family: 'Courier New', Courier, monospace;
 }
 footer a {
@@ -77,6 +77,26 @@ footer p {
   font-size: 0.4em;
   font-weight: 600;
   cursor: pointer;
+  position:relative;
+  overflow: hidden;
+}
+.page-button::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 0.1em;
+  background-color: white;
+  opacity: 1;
+  transition: opacity 300ms, transform 300ms;
+  transform: scale(0);
+  transform-origin: center;
+}
+.page-button:hover::after, 
+.page-button:focus::after 
+{
+  transform: scale(1);
 }
 
 .blink {
