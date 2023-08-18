@@ -64,7 +64,7 @@ function init()
   controls.target.set( 6.98, 38.82, 9.01 );
   controls.update();
   controls.addEventListener('change', () => {
-    console.debug(camera.position, controls.target);
+//    console.debug(camera.position, controls.target);
     repaint = true;
   });
 
